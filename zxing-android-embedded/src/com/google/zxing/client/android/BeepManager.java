@@ -126,7 +126,7 @@ public final class BeepManager implements
             mediaPlayer.setVolume(BEEP_VOLUME, BEEP_VOLUME);
             mediaPlayer.prepare();
             return mediaPlayer;
-        } catch (IOException ioe) {
+        } catch (Exception ioe) {
             Log.w(TAG, ioe);
             mediaPlayer.release();
             return null;
